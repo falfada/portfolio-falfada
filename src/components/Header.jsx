@@ -1,3 +1,4 @@
+import '../scss/modules/Header.scss';
 import NavLinks from "./Navigation";
 
 function Header() {
@@ -5,7 +6,7 @@ function Header() {
     <header>
       <div className="container">
         <h1 className="logo">falfada</h1>
-        <nav>
+        <nav className="nav">
           <NavLinks />
         </nav>
       </div>

@@ -1,0 +1,35 @@
+@import "../variables";
+
+footer{
+    width: 100%;
+    margin: 4rem 0;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            gap: 2rem;
+            li{
+                a{
+                    color: $black;
+                    position: relative;
+                    &::after{
+                        content: '';
+                        width: 0%;
+                        height: 1px;
+                        bottom: -2px;
+                        transition: all .5s ease;
+                        background: $black;
+                        position: absolute;
+                        left: 0;
+                    }
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

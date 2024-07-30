@@ -1,6 +1,8 @@
+import '../scss/modules/Header.scss';
 import { Link, useLocation } from "react-router-dom";
 function NavLinks() {
-  const currentPage = useLocation.pathname;
+  const currentPage = useLocation().pathname;
+
   return (
     <ul>
       <li>
@@ -14,7 +16,7 @@ function NavLinks() {
       <li>
         <Link
           to="/Portfolio"
-          className={currentPage === "" ? "nav-link active" : "nav-link"}
+          className={currentPage === "/Portfolio" ? "nav-link active" : "nav-link"}
         >
           Portfolio
         </Link>
@@ -22,7 +24,7 @@ function NavLinks() {
       <li>
         <Link
           to="/Contact"
-          className={currentPage === "" ? "nav-link active" : "nav-link"}
+          className={currentPage === "/Contact" ? "nav-link active" : "nav-link"}
         >
           Contact
         </Link>
@@ -30,7 +32,7 @@ function NavLinks() {
       <li>
         <Link
           to="/Resume"
-          className={currentPage === "" ? "nav-link active" : "nav-link"}
+          className={currentPage === "/Resume" ? "nav-link active" : "nav-link"}
         >
           Resume
         </Link>

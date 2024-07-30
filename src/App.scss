@@ -1,0 +1,32 @@
+@import './scss/variables';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+
+body {
+  width: 100%;
+  background-color: hsla(0, 0%, 100%, 1);
+  background-image: radial-gradient(
+      at 22% 5%,
+      hsla(333, 86%, 62%, 1) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 6% 100%, hsla(276, 91%, 38%, 1) 0px, transparent 50%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $body-font;
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
