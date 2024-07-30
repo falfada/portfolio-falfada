@@ -1,0 +1,19 @@
+@import "../variables";
+.typewriter-serif{
+    font-family: $serif-font;
+    font-style: italic;
+}
+h1.title-about{
+    font-size: 5.5rem;
+    padding-bottom: 4rem;
+}
+p.text-about{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    line-height: 3.5rem;
+    .outline{
+        border: 1px solid $black;
+        padding: .2rem .5rem;
+        border-radius: 50px;
+    }
+}

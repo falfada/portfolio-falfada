@@ -5,7 +5,7 @@ function Header() {
   return (
     <header>
       <div className="container">
-        <h1 className="logo">falfada</h1>
+        <p className="logo">falfada</p>
         <nav className="nav">
           <NavLinks />
         </nav>
