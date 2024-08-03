@@ -1,6 +1,6 @@
 import '../scss/pages/Resume.scss';
 export default function Resume(){
-    const fileUrl = 'src/assets/resume.pdf';
+    const fileUrl = 'assets/resume.pdf';
     const fileName = 'resume.pdf';
     return(
         <section className="container resume">

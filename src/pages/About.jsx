@@ -10,7 +10,7 @@ export default function About() {
   });
   return (
     <section className="container">
-      <h1 className='title-about'>Hi there, I’m Daniela <img src="src/assets/avatar.png" className="avatar" /><br/>
+      <h1 className='title-about'>Hi there, I’m Daniela <img src="assets/avatar.png" className="avatar" /><br/>
         I am a <span className="typewriter-serif">{typeEffect}</span></h1>
         <p className="text-about">
         My journey started as a web designer 👩🏻‍🎨, where I crafted visually engaging <span className="outline">websites</span>  . As my passion for technology grew, I expanded into full stack development 👩🏻‍💻, seamlessly integrating <span className="outline">front-end</span> design with <span className="outline">back-end</span> functionality.
