@@ -19,7 +19,7 @@ A React-based single-page portfolio featuring sections for personal information,
 1. Open the terminal at the project root.
 2. Type `npm run dev`
 
-Alternatively, you can see the deployed version at [alt text](assets/images/screenshot.png)
+Alternatively, you can see the deployed version [here](https://main--preeminent-pudding-2168e1.netlify.app/)
 
 ## License
 
