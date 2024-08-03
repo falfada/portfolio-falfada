@@ -1,89 +1,107 @@
 @import "../variables";
-.contact{
-    &-container{
-        display: flex;
-        justify-content: space-between;
-        
+.contact {
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &-title {
+    width: 46%;
+    font-family: $serif-font;
+    font-style: italic;
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+  &-form {
+    width: 45%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem 2rem;
+    input {
+      width: 100%;
+      appearance: none;
+      outline: none;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $black;
+      padding: 0.4rem 0;
+      font-size: 1rem;
+      font-family: $body-font;
+      transition: all 0.3s ease;
+      &::placeholder {
+        color: $black;
+      }
+      &:focus {
+        border-color: $purple;
+      }
     }
-    &-title{
-        width: 46%;
-        font-family: $serif-font;
-        font-style: italic;
-        font-size: 8rem;
-        line-height: 8rem;
+    textarea {
+      width: 100%;
+      appearance: none;
+      outline: none;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid $black;
+      padding: 0.4rem 0;
+      font-size: 1rem;
+      font-family: $body-font;
+      resize: none;
+      transition: all 0.3s ease;
+      &::placeholder {
+        color: $black;
+      }
+      &:focus {
+        border-color: $purple;
+      }
     }
-    &-form{
-        width: 45%;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem 2rem;
-        input{
-            width: 100%;
-            appearance: none;
-            outline: none;
-            border: none;
-            background: transparent;
-            border-bottom: 1px solid $black;
-            padding: .4rem 0;
-            font-size: 1rem;
-            font-family: $body-font;
-            transition: all .3s ease;
-            &::placeholder{
-                color: $black;
-            }
-            &:focus{
-                border-color: $purple;
-            }
-        }
-        textarea{
-            width: 100%;
-            appearance: none;
-            outline: none;
-            border: none;
-            background: transparent;
-            border-bottom: 1px solid $black;
-            padding: .4rem 0;
-            font-size: 1rem;
-            font-family: $body-font;
-            resize: none;
-            transition: all .3s ease;
-            &::placeholder{
-                color: $black;
-            }
-            &:focus{
-                border-color: $purple;
-            }
+    div:nth-child(3) {
+      grid-column: span 2;
+    }
+    button {
+      grid-column: span 2;
+      outline: none;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      padding: 0.4rem;
+      background: $black;
+      color: $white;
+      transition: all 0.3s ease;
+    }
+    p:last-child {
+      grid-column: span 2;
+    }
+    .error {
+      border-color: $red;
+      &-text {
+        font-size: 0.8rem;
+        margin-top: 0.4rem;
+        color: $red;
+      }
+    }
+    .success-text {
+      font-size: 0.8rem;
+      color: $green;
+    }
+  }
+}
 
+@media only screen and (max-width: 991px) {
+  .contact {
+    &-title {
+      font-size: 5rem;
+      line-height: 5rem;
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+    .contact{
+        &-title{
+            width: 100%;
         }
-        div:nth-child(3){
-            grid-column: span 2;
+        &-form{
+            width: 100%;
+            margin-top: 1rem;
         }
-        button{
-            grid-column: span 2;
-            outline: none;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            padding: .4rem;
-            background: $black;
-            color: $white;
-            transition: all .3s ease;
-        }
-        p:last-child{
-            grid-column: span 2;
-        }
-        .error{
-            border-color: $red;
-            &-text{
-                font-size: .8rem;
-                margin-top: .4rem;
-                color: $red;
-            }
-        }
-        .success-text{
-            font-size: .8rem;
-            color: $green;
-        }
-         
     }
 }

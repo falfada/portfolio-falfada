@@ -6,6 +6,7 @@ header {
   .container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     .logo {
       font-family: $serif-font;
@@ -70,6 +71,24 @@ header {
       &::after{
         right: -.8rem;
       }
+    }
+  }
+}
+@media only screen and (max-width: 767px){
+  header{
+    .container{
+      .logo{
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .nav{
+    width: 100%;
+    ul{
+      margin-top: 1rem;
+      gap: 1rem;
+      justify-content: center;
     }
   }
 }

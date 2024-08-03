@@ -85,3 +85,28 @@
         color: $black;
     }
 }
+@media only screen and (max-width: 991px){
+   .project{
+    &-container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1rem;
+    }
+    &-screenshot{
+        position: relative;
+        width: 100%;
+        height: auto;
+        order: 1;
+        opacity: 1;
+        margin-top: 1rem;
+    }
+    &-name{
+        padding-left: 0;
+        font-size: 2rem;
+        order: 0;
+    }
+    &-links{
+        opacity: 1;
+    }
+   }
+}

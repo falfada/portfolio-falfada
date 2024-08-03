@@ -1,8 +1,34 @@
-# React + Vite
+# React Portfolio
+  ![License](https://img.shields.io/badge/License-MIT_License-lightgreen.svg)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A React-based single-page portfolio featuring sections for personal information, project highlights, a contact form, and a resume. This portfolio aims to demonstrate expertise in modern web devleopment practices and serves as a professional showcase. The application is deployed on Netlify.
 
-Currently, two official plugins are available:
+## Table Of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Questions](#questions)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
+- Clone the repository to your local machine using the provided SSH key with the command git clone followed by the link provided by Github.
+- Open the folder in your default code editor. 
+- Open the terminal in your code editor and run `npm install`
+
+## Usage
+1. Open the terminal at the project root.
+2. Type `npm run dev`
+
+Alternatively, you can see the deployed version at [alt text](assets/images/screenshot.png)
+
+## License
+
+This project is licensed under the terms of the MIT License.
+You can find the full text of the license in the LICENSE file or at:
+[https://opensource.org/licenses/MIT](https://opensource.org/licenses/MIT)
+
+## Questions
+If you have any questions or need further clarification about this project, feel free to reach out to me via email at [falfada@gmail.com](mailto:falfada@gmail.com). I'm always happy to help!
+
+Created by [falfada](https://github.com/falfada)
+  

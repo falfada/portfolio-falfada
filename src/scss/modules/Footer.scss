@@ -6,9 +6,11 @@ footer{
     .container{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         ul{
             display: flex;
             gap: 2rem;
+            flex-wrap: wrap;
             li{
                 a{
                     color: $black;
@@ -33,6 +35,24 @@ footer{
         }
         .footer-copyright{
             color: $white;
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    footer{
+        padding: 2rem 0;
+        .container{
+            ul{
+                width: 100%;
+                gap: 1rem;
+                margin-top: 1rem;
+                justify-content: center;
+            }
+            .footer-copyright{
+                width: 100%;
+                text-align: center;
+                color: $black;
+            }
         }
     }
 }

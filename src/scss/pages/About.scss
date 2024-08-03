@@ -20,3 +20,24 @@ p.text-about{
 img.avatar{
     width: 5rem;
 }
+
+@media only screen and (max-width: 991px){
+    h1.title-about{
+        font-size: 3rem;
+    }
+    img.avatar{
+        width: 2.5rem;
+    }
+    p.text-about{
+        font-size: 1rem;
+        line-height: 2rem;
+        .outline{
+            padding: .1rem .4rem;
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    h1.title-about{
+        padding-bottom: 1rem;
+    }
+}

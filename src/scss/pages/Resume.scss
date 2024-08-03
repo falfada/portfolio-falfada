@@ -35,3 +35,24 @@
     }
   }
 }
+@media only screen and (max-width: 991px) {
+  .resume{
+    height: auto;
+    &-title{
+      width: 100%;
+      font-size: 2rem;
+    }
+    &-container{
+      &:nth-child(2){
+        margin-top: 1rem;
+      }
+    }
+    &-content{
+      width: 100%;
+      position: relative;
+      left: 0;
+      opacity: 1;
+      margin-top: .2rem;
+    }
+  }
+}
